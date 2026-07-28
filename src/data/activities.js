@@ -5,6 +5,26 @@
 
 const ACTIVITIES = [
   {
+    id:        'bakirkoy-ogretmenler-gunu-2025',
+    title:     'Bakırköy Belediyesi Öğretmenler Günü Koşusu',
+    type:      'running',
+    date:      '2025-11-23',
+    location:  'Bakırköy, İstanbul',
+    region:    'Marmara',
+    distanceKm: 5,
+    duration:  '30 minutes',
+    difficulty: null,
+    participants: ['Beril Kiyanfer', 'Efsane'],
+    relatedSummits: [],
+    photos: [
+      'running/bakirkoy-ogretmenler-gunu-2025/bakirkoy-coast.jpg',
+      'running/bakirkoy-ogretmenler-gunu-2025/bakirkoy-beril-efsane.jpg',
+    ],
+    gpx:       null,
+    notes:     'Completed the Bakırköy Belediyesi Öğretmenler Günü Koşusu 5K on 23 November 2025 in 30 minutes.',
+    gear:      null,
+  },
+  {
     id:        'buyukada-run-2023',
     title:     'Büyükada Run',
     type:      'running',
