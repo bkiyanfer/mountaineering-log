@@ -490,6 +490,7 @@ hr {
 .badge--goal    { background: var(--blue-muted); color: var(--white); }
 .badge--winter  { background: #2a6096; color: var(--white); }
 .badge--summer  { background: #7a6200; color: var(--white); }
+.badge--autumn  { background: #9a4f20; color: var(--white); }
 
 .card__title {
   font-size: 1.15rem;
