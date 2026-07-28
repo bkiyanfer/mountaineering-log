@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery — photos and videos from summits, hikes, and climbing days — Beril Mountain Journal.">
+  <title>Gallery · Beril Mountain Journal</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Gallery</h1>
+    <p>Photos and videos from summits, hikes, camps, and climbing days.</p>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" role="tablist" aria-label="Filter gallery">
+        <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="summit">Summits</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="hike">Hikes</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="climbing">Climbing</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="camp">Camps</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="video">Videos</button>
+      </div>
+
+      <!-- How to add photos — visible instructions -->
+      <div style="background:var(--stone);border:var(--border);border-radius:var(--radius-lg);padding:var(--s5);margin-bottom:var(--s6);font-family:var(--font-ui);font-size:0.9rem;line-height:1.7;color:var(--text-mid)">
+        <strong style="color:var(--navy-dark)">How to add photos or videos:</strong><br>
+        1. Drop the file into <code>public/media/gallery/</code> (or the relevant sub-folder).<br>
+        2. Copy one of the commented-out examples below, uncomment it, and update the <code>src</code>,
+        <code>alt</code>, <code>data-filter</code>, and caption.<br>
+        3. For videos, drop the file into <code>public/media/videos/</code> and use a
+        <code>&lt;video&gt;</code> tag instead of <code>&lt;img&gt;</code>.
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+
+        <!--
+          PHOTO EXAMPLE — uncomment and fill in:
+          <div class="gallery-item" data-type="summit">
+            <img class="gallery-item__img"
+                 src="public/media/summits/yildizbasi-summit.jpg"
+                 alt="Yıldızbaşı summit, July 2026"
+                 data-lightbox="public/media/summits/yildizbasi-summit.jpg">
+            <div class="gallery-item__caption">Yıldızbaşı — July 2026</div>
+          </div>
+
+          VIDEO EXAMPLE — uncomment and fill in:
+          <div class="gallery-item" data-type="video">
+            <video class="gallery-item__img" controls muted playsinline
+                   src="public/media/videos/yildiz-descent.mp4"
+                   poster="public/media/videos/yildiz-descent-thumb.jpg">
+            </video>
+            <div class="gallery-item__caption">Descent from Yıldızbatı — July 2026</div>
+          </div>
+        -->
+
+        <!-- Placeholder tiles until photos are added -->
+        <div class="gallery-placeholder" data-type="summit">
+          <span style="font-size:2rem">▲</span>
+          <span>Summit photos<br><small>Add to public/media/summits/</small></span>
+        </div>
+
+        <div class="gallery-placeholder" data-type="hike">
+          <span style="font-size:2rem">🏕</span>
+          <span>Hike &amp; camp photos<br><small>Add to public/media/activities/</small></span>
+        </div>
+
+        <div class="gallery-placeholder" data-type="climbing">
+          <span style="font-size:2rem">🧗</span>
+          <span>Climbing photos<br><small>Add to public/media/activities/</small></span>
+        </div>
+
+        <div class="gallery-placeholder" data-type="video">
+          <span style="font-size:2rem">▶</span>
+          <span>Videos<br><small>Add to public/media/videos/</small></span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__close" aria-label="Close">×</button>
+  <img class="lightbox__img" src="" alt="">
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="src/js/components.js"></script>
+<script>
+  // Gallery filter
+  document.querySelectorAll('.filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.filter-tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const filter = tab.dataset.filter;
+      document.querySelectorAll('#gallery-grid [data-type]').forEach(item => {
+        if (filter === 'all' || item.dataset.type === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Lightbox trigger
+  document.querySelectorAll('[data-lightbox]').forEach(el => {
+    el.addEventListener('click', () => {
+      const lb = document.getElementById('lightbox');
+      lb.querySelector('.lightbox__img').src = el.dataset.lightbox;
+      lb.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beril Mountain Journal — a personal archive of summits, hikes, and climbing days in Turkey's mountains.">
+  <title>Beril Mountain Journal</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="hero" aria-label="Hero banner">
+  <!-- Replace src with your main mountain photo -->
+  <!-- <img class="hero__bg" src="public/media/summits/hero.jpg" alt="Mountain landscape"> -->
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <h1>Beril Mountain Journal</h1>
+    <p class="lead">
+      A personal field journal of summits reached, routes walked, and rock climbed —
+      from the Aladağlar to wherever the map leads next.
+    </p>
+    <a href="summits.html" class="filter-tab active" style="display:inline-block;margin-right:0.5rem">View Summits</a>
+    <a href="activities.html" class="filter-tab" style="display:inline-block">Activities</a>
+  </div>
+</section>
+
+<!-- ── Stat bar ───────────────────────────────────────────────── -->
+<div class="stat-bar" role="region" aria-label="Quick statistics">
+  <div class="stat-bar__inner">
+    <div class="stat-item">
+      <span class="stat-item__value" id="stat-summits">4</span>
+      <span class="stat-item__label">Summits Reached</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item__value">3,723 m</span>
+      <span class="stat-item__label">Highest Summit</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item__value">3,268 m</span>
+      <span class="stat-item__label">Highest Winter Summit</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item__value">6</span>
+      <span class="stat-item__label">Goals Ahead</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ── Recent summits ─────────────────────────────────────── -->
+  <section class="section" aria-labelledby="home-summits-title">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title" id="home-summits-title">Completed Summits</h2>
+          <p class="section__subtitle">Every peak Beril has stood on top of.</p>
+        </div>
+        <a href="summits.html" class="view-all">All summits →</a>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- Hasan Dağı -->
+        <article class="card">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">▲</div>
+            <!-- <img src="public/media/summits/hasan-dagi.jpg" alt="Hasan Dağı summit"> -->
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--summit">Summit</span>
+              <span class="badge badge--winter">Winter</span>
+            </div>
+            <h3 class="card__title"><a href="summit/hasan-dagi.html">Hasan Dağı</a></h3>
+            <p class="card__elevation"><strong>3,268 m</strong> · February 2026 · Central Anatolia</p>
+            <p class="card__excerpt">Winter ascent of the iconic volcanic peak above the Cappadocian plains.</p>
+          </div>
+          <div class="card__footer">
+            <a href="summit/hasan-dagi.html" class="card__link">Read more →</a>
+          </div>
+        </article>
+
+        <!-- Emler -->
+        <article class="card">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">▲</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--summit">Summit</span>
+              <span class="badge badge--summer">Summer</span>
+            </div>
+            <h3 class="card__title"><a href="summit/emler.html">Emler</a></h3>
+            <p class="card__elevation"><strong>3,723 m</strong> · July 2026 · Aladağlar</p>
+            <p class="card__excerpt">Highest of the Yıldız summits group — reached via the Oba Yeri camp approach.</p>
+          </div>
+          <div class="card__footer">
+            <a href="summit/emler.html" class="card__link">Read more →</a>
+          </div>
+        </article>
+
+        <!-- Yıldızbaşı -->
+        <article class="card">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">▲</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--summit">Summit</span>
+              <span class="badge badge--summer">Summer</span>
+            </div>
+            <h3 class="card__title"><a href="summit/yildizbasi.html">Yıldızbaşı</a></h3>
+            <p class="card__elevation"><strong>3,685 m</strong> · July 2026 · Aladağlar</p>
+            <p class="card__excerpt">First of the two Yıldız peaks — steep scree and wind, exceptional ridge views.</p>
+          </div>
+          <div class="card__footer">
+            <a href="summit/yildizbasi.html" class="card__link">Read more →</a>
+          </div>
+        </article>
+
+        <!-- Yıldızbatı -->
+        <article class="card">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">▲</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--summit">Summit</span>
+              <span class="badge badge--summer">Summer</span>
+            </div>
+            <h3 class="card__title"><a href="summit/yildizbati.html">Yıldızbatı</a></h3>
+            <p class="card__elevation"><strong>3,700+ m</strong> · July 2026 · Aladağlar</p>
+            <p class="card__excerpt">The second Yıldız summit — reached the same day, from the ridge connecting the two peaks.</p>
+          </div>
+          <div class="card__footer">
+            <a href="summit/yildizbati.html" class="card__link">Read more →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Latest activity ────────────────────────────────────── -->
+  <section class="section section--alt" aria-labelledby="home-activity-title">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title" id="home-activity-title">Latest Activity</h2>
+          <p class="section__subtitle">The most recent trip in the journal.</p>
+        </div>
+        <a href="activities.html" class="view-all">All activities →</a>
+      </div>
+
+      <div class="card-grid--2 card-grid">
+        <article class="card">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">🏕</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--hike">Hike / Summit</span>
+            </div>
+            <h3 class="card__title">
+              <a href="activity/yildiz-summits-2026.html">Yıldız Summits — 5 Graduates, 3 Peaks &amp; Skinny Dip</a>
+            </h3>
+            <p class="card__elevation">3–7 July 2026 · Aladağlar, Niğde</p>
+            <p class="card__excerpt">A four-day camp in the Aladağlar with five friends. Two summits in one long day, unmelted snow on every descent, and a dip in Dipsiz Göl to finish.</p>
+          </div>
+          <div class="card__footer">
+            <a href="activity/yildiz-summits-2026.html" class="card__link">Read the report →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">🧗</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--climbing">Climbing</span>
+            </div>
+            <h3 class="card__title">
+              <a href="activity/ballikayalar-climbing.html">Ballıkayalar Rock Climbing Day</a>
+            </h3>
+            <p class="card__elevation">Ballıkayalar, Kocaeli</p>
+            <p class="card__excerpt">A sport climbing day at the limestone crags near Kocaeli — one of the most popular single-pitch areas in the region.</p>
+          </div>
+          <div class="card__footer">
+            <a href="activity/ballikayalar-climbing.html" class="card__link">Read the report →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Goals preview ─────────────────────────────────────── -->
+  <section class="section" aria-labelledby="home-goals-title">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title" id="home-goals-title">Mountains Ahead</h2>
+          <p class="section__subtitle">The peaks still on the list.</p>
+        </div>
+        <a href="goals.html" class="view-all">Full list →</a>
+      </div>
+
+      <div class="card-grid">
+        <div class="goal-card">
+          <div class="goal-card__name">Demirkazık</div>
+          <div class="goal-card__elevation">3,756 m · Aladağlar</div>
+          <div class="goal-card__notes">The highest and most iconic peak in the Aladağlar — a natural next step after the Yıldız Summits.</div>
+          <div class="goal-card__meta"><span class="badge badge--goal">Planned</span></div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-card__name">Kaçkar</div>
+          <div class="goal-card__elevation">3,937 m · Eastern Black Sea</div>
+          <div class="goal-card__notes">Highest peak of the Pontic Alps — multi-day approach through alpine valleys and glacial lakes.</div>
+          <div class="goal-card__meta"><span class="badge badge--goal">Planned</span></div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-card__name">Ağrı (Ararat)</div>
+          <div class="goal-card__elevation">5,137 m · Eastern Anatolia</div>
+          <div class="goal-card__notes">The highest mountain in Turkey. The ultimate long-term goal requiring permits, a guide, and careful acclimatisation.</div>
+          <div class="goal-card__meta"><span class="badge badge--goal">Planned</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__close" aria-label="Close">×</button>
+  <img class="lightbox__img" src="" alt="">
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="src/js/components.js"></script>
+</body>
+</html>

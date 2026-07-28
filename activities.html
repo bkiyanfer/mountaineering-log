@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All hikes and climbing activities — Beril Mountain Journal.">
+  <title>Activities · Beril Mountain Journal</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Activities</h1>
+    <p>Hikes, summit trips, and climbing days — every outdoor day in the journal.</p>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" role="tablist" aria-label="Filter activities">
+        <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="hike">Hikes &amp; Summits</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="climbing">Climbing</button>
+      </div>
+
+      <!-- Activity cards -->
+      <div class="card-grid card-grid--2" id="activities-list">
+
+        <!-- Yıldız Summits -->
+        <article class="card" data-type="hike">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">🏕</div>
+            <!-- <img src="public/media/activities/yildiz-camp.jpg" alt="Yıldız Summits camp"> -->
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--hike">Hike / Summit</span>
+            </div>
+            <h2 class="card__title">
+              <a href="activity/yildiz-summits-2026.html">Yıldız Summits — 5 Graduates, 3 Peaks &amp; Skinny Dip</a>
+            </h2>
+            <p class="card__elevation">3–7 July 2026 · Aladağlar, Niğde · ~7.4 km · 11 hrs summit day</p>
+            <p class="card__excerpt">
+              Four days in the Aladağlar with five friends. Two summits (Yıldızbaşı + Yıldızbatı) in a single
+              long push, unmelted snowfields throughout, a serious ridge traverse, and a swim in Dipsiz Göl
+              to close the day.
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="activity/yildiz-summits-2026.html" class="card__link">Read the full report →</a>
+          </div>
+        </article>
+
+        <!-- Ballıkayalar -->
+        <article class="card" data-type="climbing">
+          <div class="card__image">
+            <div class="card__image-placeholder" aria-hidden="true">🧗</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--climbing">Climbing</span>
+            </div>
+            <h2 class="card__title">
+              <a href="activity/ballikayalar-climbing.html">Ballıkayalar Rock Climbing Day</a>
+            </h2>
+            <p class="card__elevation">Ballıkayalar, Kocaeli · Sport climbing</p>
+            <p class="card__excerpt">
+              A day on the limestone crags at Ballıkayalar — one of the most accessible sport climbing
+              areas near Istanbul. Single-pitch routes on quality stone.
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="activity/ballikayalar-climbing.html" class="card__link">Read the report →</a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="src/js/components.js"></script>
+<script>
+  // Filter tabs
+  document.querySelectorAll('.filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.filter-tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const filter = tab.dataset.filter;
+      document.querySelectorAll('#activities-list .card').forEach(card => {
+        if (filter === 'all' || card.dataset.type === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
