@@ -5,6 +5,27 @@
 
 const ACTIVITIES = [
   {
+    id:        'buyukada-run-2023',
+    title:     'Büyükada Run',
+    type:      'running',
+    date:      '2023-10-22',
+    location:  'Büyükada, İstanbul',
+    region:    'Marmara',
+    distanceKm: 5,
+    duration:  '31:52',
+    difficulty: null,
+    participants: ['Beril Kiyanfer'],
+    relatedSummits: [],
+    photos: [
+      'running/buyukada-2023/buyukada-run.jpg',
+      'running/buyukada-2023/buyukada-medal.jpg',
+      'running/buyukada-2023/buyukada-course-map.jpg',
+    ],
+    gpx:       null,
+    notes:     'Completed the Büyükada 5 km run on 22 October 2023 in 31:52.',
+    gear:      null,
+  },
+  {
     id:        'istanbul-half-marathon-2022',
     title:     'İstanbul Yarı Maratonu',
     type:      'running',
