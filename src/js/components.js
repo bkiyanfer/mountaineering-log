@@ -45,7 +45,16 @@ const navLinks = [
 ];
 
 function buildNav() {
-  const current = window.location.pathname.replace(BASE, '') || '/';
+  // Normalize the current URL to a project-root path. The previous
+  // implementation referenced an undefined BASE variable, which stopped the
+  // entire component script before the nav and footer could be mounted.
+  const segments = window.location.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
+  const repoIdx = segments.indexOf('mountaineering-log');
+  const relativeSegments = repoIdx >= 0 ? segments.slice(repoIdx + 1) : segments;
+  const current = relativeSegments.length === 0 ||
+    (relativeSegments.length === 1 && relativeSegments[0] === 'index.html')
+    ? '/'
+    : '/' + relativeSegments.join('/');
   const linksHtml = navLinks.map(l => {
     const isActive = current === l.href || current === l.href.replace('.html', '');
     return `<li><a href="${rel(l.href)}"${isActive ? ' class="active"' : ''}>${l.label}</a></li>`;
