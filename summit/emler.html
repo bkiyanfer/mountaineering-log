@@ -31,8 +31,8 @@
 
       <article class="detail-main">
 
-        <div style="aspect-ratio:16/9;background:var(--stone);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;color:var(--warm-gray);font-size:4rem;margin-bottom:var(--s6)">
-          ▲
+        <div style="aspect-ratio:16/9;border-radius:var(--radius-lg);overflow:hidden;margin-bottom:var(--s6)">
+          <img src="../public/media/summits/emler/emler-summit.jpg" alt="Snow-covered Aladağlar seen from the Emler summit" style="width:100%;height:100%;object-fit:cover">
         </div>
 
         <h2>About the Summit</h2>
@@ -58,9 +58,17 @@
         </p>
 
         <h2>Photos</h2>
-        <p class="text-muted">
-          Drop photos into <code>public/media/summits/</code> and add filenames here.
-        </p>
+        <div class="photo-grid">
+          <div class="photo-grid__item" data-lightbox="../public/media/summits/emler/emler-camp.jpg">
+            <img src="../public/media/summits/emler/emler-camp.jpg" alt="Camp beneath Emler in the Aladağlar">
+          </div>
+          <div class="photo-grid__item" data-lightbox="../public/media/summits/emler/emler-beril-1.jpg">
+            <img src="../public/media/summits/emler/emler-beril-1.jpg" alt="Beril beside the Turkish flag at the Emler summit">
+          </div>
+          <div class="photo-grid__item" data-lightbox="../public/media/summits/emler/emler-beril-2.jpg">
+            <img src="../public/media/summits/emler/emler-beril-2.jpg" alt="Beril on the snowy Emler route">
+          </div>
+        </div>
 
         <h2>Related Activity</h2>
         <a href="yildizlar.html" class="related-link-card">

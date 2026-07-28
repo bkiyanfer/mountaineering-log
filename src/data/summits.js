@@ -28,7 +28,7 @@ const SUMMITS = [
     route:     'Approach from Oba Yeri camp',
     status:    'completed',
     winter:    false,
-    photo:     null,
+    photo:     'emler/emler-start.jpg',
     notes:     'A steep route over scree, snow patches and mixed rock in the Aladağlar range.',
   },
   {
