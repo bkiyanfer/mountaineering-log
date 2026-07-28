@@ -47,6 +47,76 @@
   </div>
 </div>
 
+<!-- ── Summit profile ─────────────────────────────────────────────── -->
+<section class="summit-profile" aria-labelledby="summit-profile-title">
+  <div class="container--wide">
+    <div class="summit-profile__heading">
+      <div>
+        <p class="summit-profile__eyebrow">The journey so far</p>
+        <h2 id="summit-profile-title">Summit Profile</h2>
+      </div>
+      <p class="summit-profile__range">0 — 5,137 m</p>
+    </div>
+
+    <div class="summit-profile__chart">
+      <svg viewBox="0 0 1200 270" role="img" aria-labelledby="summit-profile-svg-title summit-profile-svg-desc">
+        <title id="summit-profile-svg-title">Beril’s completed summits and next objective</title>
+        <desc id="summit-profile-svg-desc">An illustrated mountain profile showing Hasan Dağı at 3,268 metres, Yıldızbaşı at 3,454 metres, Yıldızbatı at 3,300 metres, Emler at 3,723 metres, and Ağrı Dağı as the next objective at 5,137 metres.</desc>
+
+        <defs>
+          <linearGradient id="completed-mountain-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#9daf6a" stop-opacity=".28"/>
+            <stop offset="100%" stop-color="#506517" stop-opacity=".05"/>
+          </linearGradient>
+          <linearGradient id="next-mountain-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#779fd9" stop-opacity=".34"/>
+            <stop offset="100%" stop-color="#779fd9" stop-opacity=".05"/>
+          </linearGradient>
+        </defs>
+
+        <line class="summit-profile__baseline" x1="25" y1="235" x2="1175" y2="235"/>
+
+        <path class="summit-profile__area" d="M25 235 L105 209 L180 183 L265 108 L350 194 L470 191 L540 91 L582 128 L630 96 L710 198 L820 194 L900 76 L980 207 L1075 180 L1112 211 L1128 235 Z"/>
+        <path class="summit-profile__line" d="M25 235 L105 209 L180 183 L265 108 L350 194 L470 191 L540 91 L582 128 L630 96 L710 198 L820 194 L900 76 L980 207 L1075 180 L1112 211 L1128 235"/>
+
+        <path class="summit-profile__next-area" d="M1128 235 L1144 164 L1160 34 L1176 164 L1192 235 Z"/>
+        <path class="summit-profile__next-line" d="M1128 235 L1144 164 L1160 34 L1176 164 L1192 235"/>
+
+        <g class="summit-profile__marker" transform="translate(265 108)">
+          <circle r="4"/>
+          <text class="summit-profile__name" x="-42" y="-21">HASAN DAĞI</text>
+          <text class="summit-profile__elevation" x="-42" y="-5">3,268 m</text>
+        </g>
+        <g class="summit-profile__marker" transform="translate(540 91)">
+          <circle r="4"/>
+          <text class="summit-profile__name" x="-28" y="-21">YILDIZBAŞI</text>
+          <text class="summit-profile__elevation" x="-28" y="-5">3,454 m</text>
+        </g>
+        <g class="summit-profile__marker summit-profile__marker--compact" transform="translate(630 96)">
+          <circle r="4"/>
+          <text class="summit-profile__name" x="10" y="-13">YILDIZBATI</text>
+          <text class="summit-profile__elevation" x="10" y="3">3,300 m</text>
+        </g>
+        <g class="summit-profile__marker" transform="translate(900 76)">
+          <circle r="4"/>
+          <text class="summit-profile__name" x="-28" y="-21">EMLER</text>
+          <text class="summit-profile__elevation" x="-28" y="-5">3,723 m</text>
+        </g>
+        <g class="summit-profile__marker summit-profile__marker--next" transform="translate(1160 34)">
+          <circle r="5"/>
+          <text class="summit-profile__name" text-anchor="end" x="-10" y="-10">AĞRI DAĞI</text>
+          <text class="summit-profile__elevation" text-anchor="end" x="-10" y="7">5,137 m · NEXT</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="summit-profile__legend" aria-hidden="true">
+      <span><i class="summit-profile__key summit-profile__key--completed"></i> Summited</span>
+      <span><i class="summit-profile__key summit-profile__key--next"></i> Next objective</span>
+    </div>
+  </div>
+</section>
+
 <main>
 
   <!-- ── Recent summits ─────────────────────────────────────── -->

@@ -716,6 +716,157 @@ hr {
   overflow: hidden;
 }
 
+/* ── Summit profile ─────────────────────────────────────────────── */
+.summit-profile {
+  overflow: hidden;
+  background: var(--navy-dark);
+  color: var(--stone);
+  padding: var(--s6) 0 var(--s5);
+  border-bottom: 4px solid var(--sky);
+}
+
+.summit-profile__heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--s5);
+  margin-bottom: var(--s2);
+}
+
+.summit-profile__eyebrow,
+.summit-profile__range {
+  margin: 0;
+  color: var(--sky-light);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.summit-profile__heading h2 {
+  margin-top: var(--s1);
+  color: var(--white);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+}
+
+.summit-profile__range {
+  padding-bottom: var(--s1);
+  white-space: nowrap;
+}
+
+.summit-profile__chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.summit-profile__baseline {
+  stroke: rgba(170, 191, 225, 0.3);
+  stroke-width: 1;
+  stroke-dasharray: 3 5;
+}
+
+.summit-profile__area {
+  fill: url("#completed-mountain-fill");
+}
+
+.summit-profile__line,
+.summit-profile__next-line {
+  fill: none;
+  stroke: #9daf6a;
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.summit-profile__next-area {
+  fill: url("#next-mountain-fill");
+}
+
+.summit-profile__next-line {
+  stroke: var(--sky);
+}
+
+.summit-profile__marker circle {
+  fill: var(--navy-dark);
+  stroke: #b8c98a;
+  stroke-width: 2;
+}
+
+.summit-profile__marker text {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.summit-profile__name {
+  fill: #c7d49f;
+}
+
+.summit-profile__elevation {
+  fill: var(--stone);
+  font-weight: 700;
+}
+
+.summit-profile__marker--next circle {
+  stroke: var(--sky-light);
+}
+
+.summit-profile__marker--next .summit-profile__name,
+.summit-profile__marker--next .summit-profile__elevation {
+  fill: var(--sky-light);
+}
+
+.summit-profile__legend {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--s5);
+  color: var(--sky-light);
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+}
+
+.summit-profile__legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+.summit-profile__key {
+  width: 18px;
+  height: 2px;
+  background: #9daf6a;
+}
+
+.summit-profile__key--next {
+  background: var(--sky);
+}
+
+@media (max-width: 680px) {
+  .summit-profile {
+    padding-top: var(--s5);
+  }
+
+  .summit-profile__chart {
+    overflow-x: auto;
+    margin-right: calc(var(--s5) * -1);
+    padding-right: var(--s5);
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue-muted) transparent;
+  }
+
+  .summit-profile__chart svg {
+    width: 760px;
+    max-width: none;
+  }
+
+  .summit-profile__legend {
+    justify-content: flex-start;
+    margin-top: var(--s3);
+  }
+}
+
 .goal-card__image {
   display: block;
   width: calc(100% + var(--s5) + var(--s5));
