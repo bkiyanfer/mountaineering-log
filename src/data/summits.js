@@ -34,8 +34,8 @@ const SUMMITS = [
   {
     id:        'yildizlar',
     name:      'Yıldızlar',
-    elevation: 3700,
-    elevationNote: 'Yıldızbaşı 3,685 m + Yıldızbatı 3,700+ m',
+    elevation: 3454,
+    elevationNote: 'Yıldızbaşı 3,454 m + Yıldızbatı 3,300 m',
     date:      '2026-07-04',
     season:    'Summer',
     region:    'Aladağlar, Central Taurus',
@@ -44,8 +44,8 @@ const SUMMITS = [
     winter:    false,
     photo:     'yildiz/yildiz-start.jpg',
     peaks: [
-      { id: 'yildizbasi', name: 'Yıldızbaşı', elevation: 3685 },
-      { id: 'yildizbati', name: 'Yıldızbatı', elevation: 3700, elevationNote: '3,700+ m' },
+      { id: 'yildizbasi', name: 'Yıldızbaşı', elevation: 3454 },
+      { id: 'yildizbati', name: 'Yıldızbatı', elevation: 3300 },
     ],
     notes:     'One connected summit story containing Yıldızbaşı and Yıldızbatı, both reached during the same ridge traverse.',
   },
