@@ -375,6 +375,12 @@ hr {
 .section--alt { background: var(--stone); }
 .section--dark { background: var(--navy-dark); color: var(--stone); }
 
+/* Keep the three home-page preview bands visually balanced. */
+main:has(> .section #home-summits-title) {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
 .section__title {
   font-size: 1.5rem;
   margin-bottom: var(--s2);
@@ -549,6 +555,10 @@ hr {
 }
 
 @media (max-width: 780px) {
+  main:has(> .section #home-summits-title) {
+    display: block;
+  }
+
   .detail-layout { grid-template-columns: 1fr; }
 }
 
