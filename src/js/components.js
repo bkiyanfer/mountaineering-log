@@ -93,8 +93,7 @@ function buildFooter() {
       <ul>
         <li><a href="${rel('/summit/hasan-dagi.html')}">Hasan Dağı — 3,268 m</a></li>
         <li><a href="${rel('/summit/emler.html')}">Emler — 3,723 m</a></li>
-        <li><a href="${rel('/summit/yildizbasi.html')}">Yıldızbaşı — 3,685 m</a></li>
-        <li><a href="${rel('/summit/yildizbati.html')}">Yıldızbatı — 3,700+ m</a></li>
+        <li><a href="${rel('/summit/yildizlar.html')}">Yıldızlar — Yıldızbaşı + Yıldızbatı</a></li>
       </ul>
     </div>
   </div>

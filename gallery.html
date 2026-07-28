@@ -32,57 +32,30 @@
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="video">Videos</button>
       </div>
 
-      <!-- How to add photos — visible instructions -->
-      <div style="background:var(--stone);border:var(--border);border-radius:var(--radius-lg);padding:var(--s5);margin-bottom:var(--s6);font-family:var(--font-ui);font-size:0.9rem;line-height:1.7;color:var(--text-mid)">
-        <strong style="color:var(--navy-dark)">How to add photos or videos:</strong><br>
-        1. Drop the file into <code>public/media/gallery/</code> (or the relevant sub-folder).<br>
-        2. Copy one of the commented-out examples below, uncomment it, and update the <code>src</code>,
-        <code>alt</code>, <code>data-filter</code>, and caption.<br>
-        3. For videos, drop the file into <code>public/media/videos/</code> and use a
-        <code>&lt;video&gt;</code> tag instead of <code>&lt;img&gt;</code>.
-      </div>
-
       <div class="gallery-grid" id="gallery-grid">
-
-        <!--
-          PHOTO EXAMPLE — uncomment and fill in:
-          <div class="gallery-item" data-type="summit">
-            <img class="gallery-item__img"
-                 src="public/media/summits/yildizbasi-summit.jpg"
-                 alt="Yıldızbaşı summit, July 2026"
-                 data-lightbox="public/media/summits/yildizbasi-summit.jpg">
-            <div class="gallery-item__caption">Yıldızbaşı — July 2026</div>
-          </div>
-
-          VIDEO EXAMPLE — uncomment and fill in:
-          <div class="gallery-item" data-type="video">
-            <video class="gallery-item__img" controls muted playsinline
-                   src="public/media/videos/yildiz-descent.mp4"
-                   poster="public/media/videos/yildiz-descent-thumb.jpg">
-            </video>
-            <div class="gallery-item__caption">Descent from Yıldızbatı — July 2026</div>
-          </div>
-        -->
-
-        <!-- Placeholder tiles until photos are added -->
-        <div class="gallery-placeholder" data-type="summit">
-          <span style="font-size:2rem">▲</span>
-          <span>Summit photos<br><small>Add to public/media/summits/</small></span>
+        <div class="gallery-item" data-type="summit">
+          <img class="gallery-item__img" src="public/media/summits/hasandagi/hasan-dagi-summit-portrait.jpg" alt="Beril at the snowy Hasan Dağı summit" data-lightbox="public/media/summits/hasandagi/hasan-dagi-summit-portrait.jpg">
+          <div class="gallery-item__caption">Hasan Dağı summit — February 2026</div>
         </div>
-
-        <div class="gallery-placeholder" data-type="hike">
-          <span style="font-size:2rem">🏕</span>
-          <span>Hike &amp; camp photos<br><small>Add to public/media/activities/</small></span>
+        <div class="gallery-item" data-type="summit">
+          <img class="gallery-item__img" src="public/media/summits/hasandagi/hasan-dagi-ascent.jpg" alt="Climbers ascending Hasan Dağı above the clouds" data-lightbox="public/media/summits/hasandagi/hasan-dagi-ascent.jpg">
+          <div class="gallery-item__caption">Hasan Dağı winter ascent</div>
         </div>
-
-        <div class="gallery-placeholder" data-type="climbing">
-          <span style="font-size:2rem">🧗</span>
-          <span>Climbing photos<br><small>Add to public/media/activities/</small></span>
+        <div class="gallery-item" data-type="summit">
+          <img class="gallery-item__img" src="public/media/summits/yildiz/yildiz-oba-yeri-camp.jpg" alt="Oba Yeri camp beneath the Yıldız peaks" data-lightbox="public/media/summits/yildiz/yildiz-oba-yeri-camp.jpg">
+          <div class="gallery-item__caption">Oba Yeri camp — July 2026</div>
         </div>
-
-        <div class="gallery-placeholder" data-type="video">
-          <span style="font-size:2rem">▶</span>
-          <span>Videos<br><small>Add to public/media/videos/</small></span>
+        <div class="gallery-item" data-type="summit">
+          <img class="gallery-item__img" src="public/media/summits/yildiz/yildiz-ridge-climb.jpg" alt="Climbing the steep Yıldız ridge" data-lightbox="public/media/summits/yildiz/yildiz-ridge-climb.jpg">
+          <div class="gallery-item__caption">Yıldız ridge climb — July 2026</div>
+        </div>
+        <div class="gallery-item" data-type="summit">
+          <img class="gallery-item__img" src="public/media/summits/yildiz/yildiz-summit-efsane-beril.jpg" alt="Efsane and Beril on the Yıldız summit ridge" data-lightbox="public/media/summits/yildiz/yildiz-summit-efsane-beril.jpg">
+          <div class="gallery-item__caption">Yıldız summits — Efsane &amp; Beril</div>
+        </div>
+        <div class="gallery-item" data-type="summit">
+          <img class="gallery-item__img" src="public/media/summits/yildiz/yildiz-dipsiz-gol.jpg" alt="Dipsiz Göl among the Aladağlar peaks" data-lightbox="public/media/summits/yildiz/yildiz-dipsiz-gol.jpg">
+          <div class="gallery-item__caption">Dipsiz Göl — July 2026</div>
         </div>
 
       </div>

@@ -11,7 +11,7 @@ const GOALS = [
     region:    'Aladağlar, Central Taurus',
     season:    'Summer / Autumn',
     status:    'planned',
-    notes:     'The highest and most iconic peak of the Aladağlar range. The technical north face is one of the finest alpine routes in Turkey. A natural next objective after the Yıldız Summits experience in the same range.',
+    notes:     'The highest and most iconic peak of the Aladağlar range. The technical north face is one of the finest alpine routes in Turkey. A natural next objective after the Yıldızlar experience in the same range.',
     prep:      'Improve rock scrambling confidence; prior Aladağlar knowledge already gained.',
   },
   {
