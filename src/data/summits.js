@@ -9,14 +9,14 @@ const SUMMITS = [
     id:        'hasan-dagi',
     name:      'Hasan Dağı',
     elevation: 3268,
-    date:      '2026-02-01', // approximate — update with exact date
+    date:      '2026-03-01',
     season:    'Winter',
     region:    'Central Anatolia (Aksaray / Niğde)',
-    route:     'Standard north ridge approach',
+    route:     'Hasan Dağı 2,000 m campsite — winter summit route',
     status:    'completed',
     winter:    true,
     photo:     'hasandagi/hasan-dagi-start.jpg',
-    notes:     'Winter ascent in February 2026. Cold, clear conditions. The volcanic summit plateau offers sweeping views over the Cappadocian plains.',
+    notes:     'Winter summit completed on 1 March 2026 after camping at 2,000 m. Deep snow, fog, strong wind, and temperatures near −20°C.',
   },
   {
     id:        'emler',
