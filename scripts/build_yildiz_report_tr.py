@@ -6,7 +6,7 @@ from xml.etree import ElementTree as ET
 from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "public/media/summits/yildiz/yildiz-zirveleri-orijinal-rapor.docx"
+SOURCE = ROOT / "public/reports/yildiz/yildiz-zirveleri-orijinal-rapor.docx"
 TARGET = ROOT / "summit/yildizlar-tr.html"
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 
@@ -97,7 +97,7 @@ document = """<!DOCTYPE html>
   <div class="report-language-nav">
     <a class="filter-tab active" href="yildizlar-tr.html" lang="tr">Türkçe — Orijinal</a>
     <a class="filter-tab" href="yildizlar.html" lang="en">English Translation</a>
-    <a class="filter-tab" href="../public/media/summits/yildiz/yildiz-zirveleri-orijinal-rapor.docx" download>Orijinal DOCX'i İndir</a>
+    <a class="filter-tab" href="../public/reports/yildiz/yildiz-zirveleri-orijinal-rapor.docx" download>Orijinal DOCX'i İndir</a>
   </div>
 """ + "\n".join(parts) + """
 </article></div></main>
