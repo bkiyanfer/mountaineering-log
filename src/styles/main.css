@@ -709,6 +709,15 @@ hr {
   border-radius: var(--radius-lg);
   padding: var(--s5);
   border-left: 4px solid var(--sky);
+  overflow: hidden;
+}
+
+.goal-card__image {
+  display: block;
+  width: calc(100% + var(--s5) + var(--s5));
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin: calc(var(--s5) * -1) calc(var(--s5) * -1) var(--s5);
 }
 
 .goal-card__name {
