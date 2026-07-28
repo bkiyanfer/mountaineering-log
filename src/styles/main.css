@@ -490,6 +490,7 @@ hr {
 .badge--summit  { background: var(--navy-dark); color: var(--stone); }
 .badge--hike    { background: var(--forest); color: var(--white); }
 .badge--climbing{ background: #8b4500; color: var(--white); }
+.badge--running { background: #16747f; color: var(--white); }
 .badge--goal    { background: var(--blue-muted); color: var(--white); }
 .badge--winter  { background: #2a6096; color: var(--white); }
 .badge--summer  { background: #7a6200; color: var(--white); }

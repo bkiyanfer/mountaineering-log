@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gallery — photos and videos from summits, hikes, and climbing days — Beril Mountain Journal.">
+  <meta name="description" content="Gallery — photos and videos from summits, running, hikes, and climbing days — Beril Mountain Journal.">
   <title>Gallery · Beril Mountain Journal</title>
   <link rel="stylesheet" href="src/styles/main.css">
 </head>
@@ -14,7 +14,7 @@
 <header class="page-header">
   <div class="container">
     <h1>Gallery</h1>
-    <p>Photos and videos from summits, hikes, camps, and climbing days.</p>
+    <p>Photos and videos from summits, running, hikes, camps, and climbing days.</p>
   </div>
 </header>
 
@@ -28,11 +28,20 @@
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="summit">Summits</button>
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="hike">Hikes</button>
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="climbing">Climbing</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="running">Running</button>
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="camp">Camps</button>
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="video">Videos</button>
       </div>
 
       <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item" data-type="running">
+          <img class="gallery-item__img" src="public/media/activities/running/istanbul-half-marathon-2022/istanbul-half-marathon-finish.jpg" alt="Beril with her medal after the İstanbul Half Marathon" data-lightbox="public/media/activities/running/istanbul-half-marathon-2022/istanbul-half-marathon-finish.jpg">
+          <div class="gallery-item__caption">İstanbul Yarı Maratonu — 27 March 2022</div>
+        </div>
+        <div class="gallery-item" data-type="running">
+          <img class="gallery-item__img" src="public/media/activities/running/istanbul-half-marathon-2022/istanbul-half-marathon-medal.jpg" alt="Beril holding her İstanbul Half Marathon medal" data-lightbox="public/media/activities/running/istanbul-half-marathon-2022/istanbul-half-marathon-medal.jpg">
+          <div class="gallery-item__caption">21 km finished in 02:32:01</div>
+        </div>
         <div class="gallery-item" data-type="summit">
           <img class="gallery-item__img" src="public/media/summits/emler/emler-beril-1.jpg" alt="Beril at the Emler summit" data-lightbox="public/media/summits/emler/emler-beril-1.jpg">
           <div class="gallery-item__caption">Emler summit — 29 September 2023</div>

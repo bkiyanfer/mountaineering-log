@@ -1,9 +1,31 @@
 /* ============================================================
    activities.js — non-summit activity content data
-   Activity types: 'hike' or 'climbing'
+   Activity types: 'hike', 'climbing', or 'running'
    ============================================================ */
 
 const ACTIVITIES = [
+  {
+    id:        'istanbul-half-marathon-2022',
+    title:     'İstanbul Yarı Maratonu',
+    type:      'running',
+    date:      '2022-03-27',
+    location:  'İstanbul',
+    region:    'Marmara',
+    distanceKm: 21,
+    duration:  '02:32:01',
+    difficulty: null,
+    participants: ['Beril Kiyanfer'],
+    relatedSummits: [],
+    photos: [
+      'running/istanbul-half-marathon-2022/istanbul-half-marathon-finish.jpg',
+      'running/istanbul-half-marathon-2022/istanbul-half-marathon-medal.jpg',
+      'running/istanbul-half-marathon-2022/istanbul-half-marathon-certificate.png',
+      'running/istanbul-half-marathon-2022/istanbul-half-marathon-course-reference.jpg',
+    ],
+    gpx:       null,
+    notes:     'Completed the İstanbul Half Marathon 21 km on 27 March 2022 in 02:32:01.',
+    gear:      null,
+  },
   {
     id:        'ballikayalar-climbing',
     title:     'Ballıkayalar Rock Climbing Day',

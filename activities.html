@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="All hikes and climbing activities — Beril Mountain Journal.">
+  <meta name="description" content="Running, hiking, and climbing activities — Beril Mountain Journal.">
   <title>Activities · Beril Mountain Journal</title>
   <link rel="stylesheet" href="src/styles/main.css">
 </head>
@@ -14,7 +14,7 @@
 <header class="page-header">
   <div class="container">
     <h1>Activities</h1>
-    <p>Hikes and climbing days — every non-summit outdoor day in the journal.</p>
+    <p>Running, hiking, and climbing — every non-summit day in the journal.</p>
   </div>
 </header>
 
@@ -27,10 +27,34 @@
         <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="hike">Hikes</button>
         <button class="filter-tab" role="tab" aria-selected="false" data-filter="climbing">Climbing</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="running">Running</button>
       </div>
 
       <!-- Activity cards -->
       <div class="card-grid card-grid--2" id="activities-list">
+
+        <!-- İstanbul Half Marathon -->
+        <article class="card" data-type="running">
+          <div class="card__image">
+            <img src="public/media/activities/running/istanbul-half-marathon-2022/istanbul-half-marathon-finish.jpg" alt="Beril with her medal after the 2022 İstanbul Half Marathon">
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="badge badge--running">Running</span>
+            </div>
+            <h2 class="card__title">
+              <a href="activity/istanbul-half-marathon-2022.html">İstanbul Yarı Maratonu</a>
+            </h2>
+            <p class="card__elevation">21 km · 27 March 2022 · 02:32:01</p>
+            <p class="card__excerpt">
+              Beril’s first recorded run in the journal: the İstanbul Half Marathon, completed over
+              21 kilometres in 2 hours, 32 minutes, and 1 second.
+            </p>
+          </div>
+          <div class="card__footer">
+            <a href="activity/istanbul-half-marathon-2022.html" class="card__link">View the run →</a>
+          </div>
+        </article>
 
         <!-- Ballıkayalar -->
         <article class="card" data-type="climbing">
